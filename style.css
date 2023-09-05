@@ -1,0 +1,60 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+:root {font-size: 16px;}
+body {background: linear-gradient(to right, rgba(0, 0, 0, 0.981), rgba(0, 0, 0, 0.766)), url('background.png') no-repeat fixed center; background-size: cover;}
+
+/* header */
+header {
+    min-height: 5em; max-width: 60em; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0.5em;
+}
+header img {width: 2.5em;}
+header .nav a {color: skyblue; text-decoration: none; font-size: 1em; font-weight: bold; padding: 0.5em 1em;}
+header .nav a:hover {color: white;}
+header .ls_menuBar a {color: white; text-decoration: none; border: 0.1em solid; padding: 0.3em 1em; margin: 0 .5em 0 0;}
+header .ls_menuBar a:hover {color: skyblue; border-color: skyblue;}
+header .ls_menuBar .menuBar {font-size: 1.2em; width: 1em; background-color: transparent; border: none; color: transparent; position: fixed; cursor: pointer;}
+#show {rotate: 90deg; letter-spacing: 0.1em;}
+
+/* main */
+main {padding: 5em 2em;}
+main span {display: block; max-width: 40em;}
+.subHeading {color: white; font-size: 1em; font-weight: bold;}
+.heading {font-size: 5em; color: skyblue;}
+.description {font-size: 1em; color: gray; margin: 1em 0; width: 70%;}
+.contact {background-color: skyblue; font-size: 1em; padding: 0.5em 1em; font-weight: bold; margin-top: 1em; cursor: pointer;}
+.contact:hover {background-color: white;}
+
+
+
+
+
+
+/* resonsiveness */
+@media (max-width: 620px) {
+    :root {font-size: 12px;}
+    header .nav {
+        position: fixed; top: 4em; right: -100%; width: 100%; height: 100vh; background-color: rgba(0, 0, 0, 0.179);
+        display: flex; flex-direction: column; align-items: center; transition: all 250ms ease;
+    }
+    header .nav a {margin-top: 1em;}
+    header .ls_menuBar .menuBar {position: static; color: white;}
+    #hide {display: none;}
+}
+
+@media (max-width: 415px) {
+    :root {font-size: 9px;}
+}
+
+@media (max-width: 310px) {
+    :root {font-size: 7px;}
+}
+
+@media (max-width: 240px) {
+    :root {font-size: 5px;}
+}
+
+
+
+
+
+
+
